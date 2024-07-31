@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marquee Example</title>
+    <title>Dynamic Marquee Example</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            text-align: center;
         }
         .swiper-container {
             width: 100%;
@@ -34,8 +35,9 @@
             color: green; /* 设置字体颜色为绿色 */
             margin: 10px; /* 添加间距 */
         }
-        .swiper-slide {
-            height: 100%; /* 使幻灯片高度充满容器 */
+        .copyable {
+            user-select: text; /* 使文本可选中 */
+            cursor: pointer; /* 鼠标悬停时显示为指针 */
         }
     </style>
 </head>
@@ -51,53 +53,59 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         async function fetchData() {
-            const response = await fetch('https://raw.githubusercontent.com/douglas488/paomadeng2/main/data.txt'); // 确保URL正确
-            const data = await response.text();
-            const lines = data.trim().split('\n');
-            const slidesContainer = document.getElementById('swiper-wrapper');
-            
-            lines.forEach((line, index) => {
-                const [first, second, third] = line.split('\t');
-                const slide = document.createElement('div');
-                slide.className = 'swiper-slide';
-                slide.innerHTML = `
-                    <div class="top-content">${first}</div>
-                    <div class="top-content">${second}</div>
-                    <div class="middle-content copyable" id="copy-text-${index}">${third}</div>
-                `;
-                slidesContainer.appendChild(slide);
+            try {
+                // 添加随机参数来防止缓存
+                const response = await fetch('https://raw.githubusercontent.com/douglas488/paomadeng2/main/data.txt?' + new Date().getTime());
+                const data = await response.text();
+                const lines = data.trim().split('\n');
+                const slidesContainer = document.getElementById('swiper-wrapper');
                 
-                const copyText = document.getElementById(`copy-text-${index}`);
-                let timer;
-                copyText.addEventListener('mousedown', function() {
-                    timer = setTimeout(function() {
-                        const range = document.createRange();
-                        range.selectNode(copyText);
-                        window.getSelection().removeAllRanges();
-                        window.getSelection().addRange(range);
+                lines.forEach((line, index) => {
+                    const [first, second, third] = line.split('\t');
+                    const slide = document.createElement('div');
+                    slide.className = 'swiper-slide';
+                    slide.innerHTML = `
+                        <div class="top-content">${first}</div>
+                        <div class="top-content">${second}</div>
+                        <div class="middle-content copyable" id="copy-text-${index}">${third}</div>
+                    `;
+                    slidesContainer.appendChild(slide);
+                    
+                    const copyText = document.getElementById(`copy-text-${index}`);
+                    let timer;
+                    copyText.addEventListener('mousedown', function() {
+                        timer = setTimeout(function() {
+                            const range = document.createRange();
+                            range.selectNode(copyText);
+                            window.getSelection().removeAllRanges();
+                            window.getSelection().addRange(range);
 
-                        try {
-                            document.execCommand('copy');
-                            alert('Copied: ' + copyText.textContent);
-                        } catch (err) {
-                            console.error('Failed to copy text: ', err);
-                        }
+                            try {
+                                document.execCommand('copy');
+                                alert('Copied: ' + copyText.textContent);
+                            } catch (err) {
+                                console.error('Failed to copy text: ', err);
+                            }
 
-                        window.getSelection().removeAllRanges();
-                    }, 1000); // 长按 1 秒（1000 毫秒）触发复制
+                            window.getSelection().removeAllRanges();
+                        }, 1000); // 长按 1 秒（1000 毫秒）触发复制
+                    });
+
+                    copyText.addEventListener('mouseup', function() {
+                        clearTimeout(timer);
+                    });
                 });
 
-                copyText.addEventListener('mouseup', function() {
-                    clearTimeout(timer);
+                new Swiper('.swiper-container', {
+                    pagination: {
+                        el: '.swiper-pagination',
+                    },
+                    loop: true,
                 });
-            });
-
-            new Swiper('.swiper-container', {
-                pagination: {
-                    el: '.swiper-pagination',
-                },
-                loop: true,
-            });
+            } catch (error) {
+                console.error('Failed to fetch data:', error);
+                document.getElementById('swiper-wrapper').innerText = 'Failed to load content.';
+            }
         }
 
         document.addEventListener('DOMContentLoaded', fetchData);
