@@ -22,12 +22,11 @@
             align-items: center;
             font-size: 24px;
         }
+        .copyable {
+            user-select: text; /* 使文本可选中 */
+            cursor: pointer; /* 鼠标悬停时显示为指针 */
+        }
     </style>
-    <script>
-        setInterval(function() {
-            location.reload();
-        }, 5000); // 5000毫秒（即5秒）
-    </script>
 </head>
 <body>
     <div class="swiper-container">
@@ -35,10 +34,10 @@
             <div class="swiper-slide">
                 <div>1</div>
                 <div>2</div>
-                <div>3</div>
+                <div class="copyable" id="copy-text">3</div>
             </div>
             <div class="swiper-slide">Page 2</div>
-            <div class="swiper-slide">Page 55555</div>
+            <div class="swiper-slide">Page 3</div>
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
@@ -51,6 +50,34 @@
                 el: '.swiper-pagination',
             },
             loop: true,
+        });
+
+        // JavaScript 代码监听长按事件并复制内容到剪贴板
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const copyText = document.getElementById('copy-text');
+
+            let timer;
+            copyText.addEventListener('mousedown', function() {
+                timer = setTimeout(function() {
+                    const range = document.createRange();
+                    range.selectNode(copyText);
+                    window.getSelection().removeAllRanges(); 
+                    window.getSelection().addRange(range); 
+
+                    try {
+                        document.execCommand('copy');
+                        alert('Copied: ' + copyText.textContent);
+                    } catch (err) {
+                        console.error('Failed to copy text: ', err);
+                    }
+
+                    window.getSelection().removeAllRanges(); 
+                }, 1000); // 长按 1 秒（1000 毫秒）触发复制
+            });
+
+            copyText.addEventListener('mouseup', function() {
+                clearTimeout(timer);
+            });
         });
     </script>
 </body>
