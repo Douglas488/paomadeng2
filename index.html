@@ -21,6 +21,17 @@
             justify-content: center;
             align-items: center;
             font-size: 24px;
+            text-align: center; /* 居中对齐文本 */
+        }
+        .swiper-slide > div {
+            margin: 10px; /* 添加间距 */
+        }
+        .swiper-slide .top-content {
+            margin-bottom: auto; /* 将内容推到顶部 */
+        }
+        .swiper-slide .middle-content {
+            font-size: 36px; /* 增大字体 */
+            color: green; /* 设置字体颜色为绿色 */
         }
         .copyable {
             user-select: text; /* 使文本可选中 */
@@ -50,9 +61,9 @@
                 const slide = document.createElement('div');
                 slide.className = 'swiper-slide';
                 slide.innerHTML = `
-                    <div>${first}</div>
-                    <div>${second}</div>
-                    <div class="copyable" id="copy-text-${index}">${third}</div>
+                    <div class="top-content">${first}</div>
+                    <div class="top-content">${second}</div>
+                    <div class="middle-content copyable" id="copy-text-${index}">${third}</div>
                 `;
                 slidesContainer.appendChild(slide);
                 
