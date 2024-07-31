@@ -30,14 +30,8 @@
 </head>
 <body>
     <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div>1</div>
-                <div>2</div>
-                <div class="copyable" id="copy-text">3</div>
-            </div>
-            <div class="swiper-slide">Page 2</div>
-            <div class="swiper-slide">Page 3</div>
+        <div class="swiper-wrapper" id="swiper-wrapper">
+            <!-- Slides will be dynamically added here -->
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
@@ -45,40 +39,57 @@
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper('.swiper-container', {
-            pagination: {
-                el: '.swiper-pagination',
-            },
-            loop: true,
-        });
+        async function fetchData() {
+            const response = await fetch('https://raw.githubusercontent.com/douglas488/paomadeng2/main/data.txt'); // 确保URL正确
+            const data = await response.text();
+            const lines = data.trim().split('\n');
+            const slidesContainer = document.getElementById('swiper-wrapper');
+            
+            lines.forEach((line, index) => {
+                const [first, second, third] = line.split('\t');
+                const slide = document.createElement('div');
+                slide.className = 'swiper-slide';
+                slide.innerHTML = `
+                    <div>${first}</div>
+                    <div>${second}</div>
+                    <div class="copyable" id="copy-text-${index}">${third}</div>
+                `;
+                slidesContainer.appendChild(slide);
+                
+                const copyText = document.getElementById(`copy-text-${index}`);
+                let timer;
+                copyText.addEventListener('mousedown', function() {
+                    timer = setTimeout(function() {
+                        const range = document.createRange();
+                        range.selectNode(copyText);
+                        window.getSelection().removeAllRanges();
+                        window.getSelection().addRange(range);
 
-        // JavaScript 代码监听长按事件并复制内容到剪贴板
-        document.addEventListener('DOMContentLoaded', (event) => {
-            const copyText = document.getElementById('copy-text');
+                        try {
+                            document.execCommand('copy');
+                            alert('Copied: ' + copyText.textContent);
+                        } catch (err) {
+                            console.error('Failed to copy text: ', err);
+                        }
 
-            let timer;
-            copyText.addEventListener('mousedown', function() {
-                timer = setTimeout(function() {
-                    const range = document.createRange();
-                    range.selectNode(copyText);
-                    window.getSelection().removeAllRanges(); 
-                    window.getSelection().addRange(range); 
+                        window.getSelection().removeAllRanges();
+                    }, 1000); // 长按 1 秒（1000 毫秒）触发复制
+                });
 
-                    try {
-                        document.execCommand('copy');
-                        alert('Copied: ' + copyText.textContent);
-                    } catch (err) {
-                        console.error('Failed to copy text: ', err);
-                    }
-
-                    window.getSelection().removeAllRanges(); 
-                }, 1000); // 长按 1 秒（1000 毫秒）触发复制
+                copyText.addEventListener('mouseup', function() {
+                    clearTimeout(timer);
+                });
             });
 
-            copyText.addEventListener('mouseup', function() {
-                clearTimeout(timer);
+            new Swiper('.swiper-container', {
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+                loop: true,
             });
-        });
+        }
+
+        document.addEventListener('DOMContentLoaded', fetchData);
     </script>
 </body>
 </html>
