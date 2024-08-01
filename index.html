@@ -17,22 +17,22 @@
         .sidebar {
             width: 20%;
             background-color: #f4f4f4;
-            padding: 20px;
+            padding: 10px; /* 减少内边距 */
             box-shadow: -2px 0 5px rgba(0,0,0,0.1);
             overflow-y: auto;
-            height: 100%; /* 让 sidebar 高度适应视口 */
+            height: calc(100% - 20px); /* 高度适应视口并减小顶部和底部空间 */
             position: fixed; /* 固定在左侧 */
-            top: 0;
+            top: 10px; /* 向下移动 10px */
             left: 0;
             z-index: 10; /* 确保 sidebar 在其他元素之上 */
         }
         .sidebar a {
             display: block;
-            padding: 10px;
-            margin-bottom: 10px;
+            padding: 8px;
+            margin-bottom: 8px;
             color: #333;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 14px; /* 减小字体大小 */
             border-radius: 4px;
         }
         .sidebar a:hover {
@@ -58,7 +58,7 @@
             font-size: 24px;
         }
         .top-content {
-            font-size: 28px; /* 调整字体大小 */
+            font-size: 18px; /* 调整字体大小 */
             color: rgba(0, 0, 0, 0.966); /* 设置字体颜色 */
             margin: 10px 0;
         }
