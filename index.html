@@ -3,22 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Código</title>
+    <title>Marquee Example</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Century, sans-serif;
             margin: 0;
             padding: 0;
-            text-align: center;
+            display: flex;
+            height: 100vh; /* 让 body 高度适应视口 */
+            overflow: hidden; /* 防止滚动条 */
         }
-        .swiper-container {
-            width: 100%;
-            height: 100vh;
+        .sidebar {
+            width: 20%;
+            background-color: #f4f4f4;
+            padding: 20px;
+            box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+            overflow-y: auto;
+            height: 100%; /* 让 sidebar 高度适应视口 */
+            position: fixed; /* 固定在左侧 */
+            top: 0;
+            left: 0;
+            z-index: 10; /* 确保 sidebar 在其他元素之上 */
+        }
+        .sidebar a {
+            display: block;
+            padding: 10px;
+            margin-bottom: 10px;
+            color: #333;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 4px;
+        }
+        .sidebar a:hover {
+            background-color: #ddd;
+        }
+        .content {
+            width: 80%; /* 剩余宽度 */
+            margin-left: 20%; /* 避免内容被 sidebar 覆盖 */
             display: flex;
             align-items: center; /* 垂直居中 */
             justify-content: center; /* 水平居中 */
-            background-color: #f0f0f0;
+            height: 100%; /* 高度适应视口 */
+        }
+        .swiper-container {
+            width: 100%;
+            height: 100%;
         }
         .swiper-slide {
             display: flex;
@@ -26,19 +56,16 @@
             justify-content: center;
             align-items: center;
             font-size: 24px;
-            text-align: center; /* 居中对齐文本 */
-            background-color: white;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            padding: 20px;
         }
         .top-content {
-            margin: 10px; /* 添加间距 */
+            font-size: 28px; /* 调整字体大小 */
+            color: rgba(0, 0, 0, 0.966); /* 设置字体颜色 */
+            margin: 10px 0;
         }
         .middle-content {
-            font-size: 36px; /* 增大字体 */
-            color: green; /* 设置字体颜色为绿色 */
-            margin: 10px; /* 添加间距 */
+            font-size: 48px; /* 调整字体大小 */
+            color: rgb(0, 190, 0); /* 设置字体颜色 */
+            margin: 10px 0;
         }
         .copyable {
             user-select: text; /* 使文本可选中 */
@@ -47,74 +74,95 @@
     </style>
 </head>
 <body>
-    <div class="swiper-container">
-        <div class="swiper-wrapper" id="swiper-wrapper">
-            <!-- Slides will be dynamically added here -->
+    <div class="sidebar" id="sidebar">
+        <!-- Navigation links will be dynamically added here -->
+    </div>
+    <div class="content">
+        <div class="swiper-container">
+            <div class="swiper-wrapper" id="swiper-wrapper">
+                <!-- Slides will be dynamically added here -->
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
         </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
     </div>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
+        let swiper;
+
         async function fetchData() {
-            try {
-                // 添加随机参数来防止缓存
-                const response = await fetch('https://raw.githubusercontent.com/douglas488/paomadeng2/main/data.txt?' + new Date().getTime());
-                const data = await response.text();
-                const lines = data.trim().split('\n');
-                const slidesContainer = document.getElementById('swiper-wrapper');
+            const response = await fetch('https://raw.githubusercontent.com/douglas488/paomadeng2/main/data.txt?' + new Date().getTime()); // 确保URL正确并防止缓存
+            const data = await response.text();
+            const lines = data.trim().split('\n');
+            const slidesContainer = document.getElementById('swiper-wrapper');
+            const sidebar = document.getElementById('sidebar');
+            
+            lines.forEach((line, index) => {
+                const [first, second, third] = line.split('\t');
+                const slide = document.createElement('div');
+                slide.className = 'swiper-slide';
+                slide.innerHTML = `
+                    <div class="top-content">${first}</div>
+                    <div class="top-content">${second}</div>
+                    <div class="middle-content copyable" id="copy-text-${index}">${third}</div>
+                `;
+                slidesContainer.appendChild(slide);
+
+                // 创建导航链接
+                const navLink = document.createElement('a');
+                navLink.textContent = second;
+                navLink.href = `#${index}`;
+                navLink.dataset.index = index; // 添加索引数据属性
+                sidebar.appendChild(navLink);
                 
-                lines.forEach((line, index) => {
-                    const [first, second, third] = line.split('\t');
-                    const slide = document.createElement('div');
-                    slide.className = 'swiper-slide';
-                    slide.innerHTML = `
-                        <div class="top-content">${first}</div>
-                        <div class="top-content">${second}</div>
-                        <div class="middle-content copyable" id="copy-text-${index}">${third}</div>
-                    `;
-                    slidesContainer.appendChild(slide);
-                    
-                    const copyText = document.getElementById(`copy-text-${index}`);
-                    let timer;
-                    copyText.addEventListener('mousedown', function() {
-                        timer = setTimeout(function() {
-                            const range = document.createRange();
-                            range.selectNode(copyText);
-                            window.getSelection().removeAllRanges();
-                            window.getSelection().addRange(range);
+                const copyText = document.getElementById(`copy-text-${index}`);
+                let timer;
+                copyText.addEventListener('mousedown', function() {
+                    timer = setTimeout(function() {
+                        const range = document.createRange();
+                        range.selectNode(copyText);
+                        window.getSelection().removeAllRanges();
+                        window.getSelection().addRange(range);
 
-                            try {
-                                document.execCommand('copy');
-                                alert('Copied: ' + copyText.textContent);
-                            } catch (err) {
-                                console.error('Failed to copy text: ', err);
-                            }
+                        try {
+                            document.execCommand('copy');
+                            alert('Copied: ' + copyText.textContent);
+                        } catch (err) {
+                            console.error('Failed to copy text: ', err);
+                        }
 
-                            window.getSelection().removeAllRanges();
-                        }, 1000); // 长按 1 秒（1000 毫秒）触发复制
-                    });
-
-                    copyText.addEventListener('mouseup', function() {
-                        clearTimeout(timer);
-                    });
+                        window.getSelection().removeAllRanges();
+                    }, 1000); // 长按 1 秒（1000 毫秒）触发复制
                 });
 
-                new Swiper('.swiper-container', {
-                    pagination: {
-                        el: '.swiper-pagination',
-                    },
-                    loop: true,
-                    effect: 'flip', // 使用 flip 特效
-                    flipEffect: {
-                        slideShadows: false, // 禁用翻页阴影效果
-                    },
+                copyText.addEventListener('mouseup', function() {
+                    clearTimeout(timer);
                 });
-            } catch (error) {
-                console.error('Failed to fetch data:', error);
-                document.getElementById('swiper-wrapper').innerText = 'Failed to load content.';
-            }
+            });
+
+            swiper = new Swiper('.swiper-container', {
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+                loop: true,
+                speed: 600,
+                effect: 'slide',
+                slidesPerView: 1,
+                centeredSlides: true,
+                spaceBetween: 30,
+            });
+
+            // 处理导航链接点击事件
+            document.querySelectorAll('.sidebar a').forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const index = parseInt(link.dataset.index, 10);
+                    if (!isNaN(index)) {
+                        swiper.slideTo(index + 1); // Swiper 使用从 0 开始的索引，因此需要加 1
+                    }
+                });
+            });
         }
 
         document.addEventListener('DOMContentLoaded', fetchData);
