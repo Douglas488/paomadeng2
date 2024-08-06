@@ -91,19 +91,19 @@
             transition: transform 0.3s, box-shadow 0.3s;
         }
         .swiper-slide:hover {
-            transform: scale(1.2); /* 放大效果 */
+            transform: scale(1.5); /* 放大效果 */
             box-shadow: 0 8px 16px rgba(0,0,0,0.3);
         }
         .top-content {
             font-family: 'Roboto'; /* 使用 Arial 字体 */
-            font-size: 20px;
+            font-size: 16px;
             color: #333;
             margin: 10px 0;
             font-weight: 500;
         }
         .middle-content {
-            font-family: 'Roboto', 华文新魏; /* 使用 Arial 字体 */
-            font-size: 24px;
+            font-family: 'Roboto', Century; /* 使用 Arial 字体 */
+            font-size: 12px;
             color: #00ff00;
             margin: 10px 0;
             font-weight: 700;
@@ -114,9 +114,9 @@
             color: #00a2fff6;
             text-decoration: underline;
             transition: color 0.3s;
-            font-family: 'Roboto', 华文新魏;
+            font-family: 'Roboto', Century;
             font-weight: 500;
-            font-size: 26px;
+            font-size: 24px;
         }
         .copyable:hover {
             color: #66ff00;
@@ -189,14 +189,14 @@
                 loop: true,
                 speed: 600,
                 effect: 'coverflow', // 使用 coverflow 效果
-                slidesPerView: 3, // 显示三个滑块
+                slidesPerView: 1.8, // 显示三个滑块
                 centeredSlides: true,
                 spaceBetween: 30,
                 coverflowEffect: {
-                    rotate: 50,
+                    rotate: 0,
                     stretch: 0,
-                    depth: 100,
-                    modifier: 1,
+                    depth: 200,
+                    modifier: 5,
                     slideShadows: true,
                 },
             });
