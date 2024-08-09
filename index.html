@@ -15,6 +15,8 @@
             height: 100vh;
             overflow: hidden;
             background: linear-gradient(to right, #ffffff, #ffffff);
+            justify-content: center;
+            align-items: center;
         }
         .sidebar {
             width: 5%;
@@ -22,16 +24,12 @@
             padding: 8px;
             box-shadow: 1px 0 8px rgba(0,0,0,0.2);
             overflow-y: auto;
-            height: calc(100% - 20px);
+            height: calc(100% - 0px);
             position: fixed;
-            top: 25px;
+            top: 0px;
             left: 0;
             z-index: 5;
             box-sizing: border-box;
-            transition: transform 0.3s ease-in-out;
-        }
-        .sidebar.hidden {
-            transform: translateX(-100%);
         }
         .sidebar a {
             display: block;
@@ -42,39 +40,39 @@
             font-size: 10px;
             border-radius: 5px;
             transition: background-color 0.3s, color 0.3s, transform 0.3s;
-            white-space: nowrap; /* 禁止文本换行 */
-            overflow: hidden; /* 隐藏溢出的文本 */
-            text-overflow: ellipsis; /* 使用省略号表示溢出的文本 */
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         .sidebar a:hover {
             background-color: #0072ff;
             color: #ffffff;
-            transform: translateX(5px);
+            transform: translateY(10px);
         }
         .content {
             width: 95%;
             margin-left: 5%;
-            margin-top: 20px;
+            height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            height: calc(100% - 40px);
             background: #ffffff;
             box-shadow: 0 0 20px rgba(0,0,0,0.1);
             padding: 5px;
             border-radius: 12px;
             box-sizing: border-box;
-            transition: width 0.3s ease-in-out, margin-left 0.3s ease-in-out;
-        }
-        .content.full-width {
-            width: 100%;
-            margin-left: 0;
+            position: relative;
         }
         .swiper-container {
             width: 100%;
             height: 100%;
             border-radius: 8px;
             overflow: hidden;
+            position: relative;
+        }
+        .swiper-wrapper {
+            display: flex;
+            flex-direction: column;
         }
         .swiper-slide {
             display: flex;
@@ -82,27 +80,52 @@
             justify-content: center;
             align-items: center;
             font-size: 24px;
-            padding: 5px;
+            padding: 20px;
             text-align: center;
-            background: #f8f9fa;
+            background: linear-gradient(135deg, #ffffff, #ffffff);
             border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
             box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
             transition: transform 0.3s, box-shadow 0.3s;
         }
+        .swiper-slide:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            z-index: 1;
+            transition: opacity 0.3s;
+        }
+        .swiper-slide:hover:before {
+            opacity: 0;
+        }
+        .swiper-slide-content {
+            position: relative;
+            z-index: 2;
+        }
         .swiper-slide:hover {
-            transform: scale(1.5); /* 放大效果 */
-            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            transform: scale(1.2);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+        }
+        .swiper-slide:hover .middle-content {
+            transform: scale(1.7);
+            transition: transform 0.3s;
         }
         .top-content {
-            font-family: 'Roboto'; /* 使用 Arial 字体 */
+            font-family:  Bookman Old Style;
             font-size: 16px;
             color: #333;
             margin: 10px 0;
             font-weight: 500;
         }
         .middle-content {
-            font-family: 'Roboto', Century; /* 使用 Arial 字体 */
+            font-family:  Bookman Old Style;
             font-size: 12px;
             color: #00ff00;
             margin: 10px 0;
@@ -111,10 +134,9 @@
         .copyable {
             user-select: text;
             cursor: pointer;
-            color: #00a2fff6;
-            text-decoration: underline;
+            color: #00e1fff6;
             transition: color 0.3s;
-            font-family: 'Roboto', Century;
+            font-family:  Bookman Old Style;
             font-weight: 500;
             font-size: 24px;
         }
@@ -122,11 +144,16 @@
             color: #66ff00;
         }
         .swiper-pagination-bullet {
-            background: #02ecfd;
+            background: #000000;
             opacity: 0.7;
         }
         .swiper-pagination-bullet-active {
-            background: #000000;
+            background: #33ff00;
+        }
+        .swiper-slide-prev,
+        .swiper-slide-next {
+            transform: scale(0.7);
+            opacity: 0.6;
         }
         @media (max-width: 768px) {
             .sidebar {
@@ -148,7 +175,6 @@
             <div class="swiper-wrapper" id="swiper-wrapper">
                 <!-- Slides will be dynamically added here -->
             </div>
-            <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
         </div>
     </div>
@@ -168,13 +194,14 @@
                 const slide = document.createElement('div');
                 slide.className = 'swiper-slide';
                 slide.innerHTML = `
-                    <div class="top-content">${first}</div>
-                    <div class="top-content">${second}</div>
-                    <div class="middle-content copyable" id="copy-text-${index}">${third}</div>
+                    <div class="swiper-slide-content">
+                        <div class="top-content">${first}</div>
+                        <div class="top-content">${second}</div>
+                        <div class="middle-content copyable" id="copy-text-${index}">${third}</div>
+                    </div>
                 `;
                 slidesContainer.appendChild(slide);
 
-                // 创建导航链接
                 const navLink = document.createElement('a');
                 navLink.textContent = second;
                 navLink.href = `#${index}`;
@@ -182,23 +209,26 @@
                 sidebar.appendChild(navLink);
             });
 
-            swiper = new Swiper('.swiper-container', {
+            const swiper = new Swiper('.swiper-container', {
                 pagination: {
                     el: '.swiper-pagination',
                 },
                 loop: true,
-                speed: 600,
-                effect: 'coverflow', // 使用 coverflow 效果
-                slidesPerView: 1.8, // 显示三个滑块
-                centeredSlides: true,
+                speed: 800,
+                effect: 'slide', // 或者使用 'cube', 'slide' 等其他效果
+                direction: 'vertical',
+                slidesPerView: 1,
                 spaceBetween: 30,
-                coverflowEffect: {
-                    rotate: 0,
-                    stretch: 0,
-                    depth: 200,
-                    modifier: 5,
-                    slideShadows: false,
-                },
+                centeredSlides: true,
+                slideToClickedSlide: true,
+            });
+
+            let autoSlideInterval = setInterval(() => {
+                swiper.slideNext();
+            }, 2000); // 自动滑动时间间隔，单位为毫秒
+
+            document.body.addEventListener('click', () => {
+                clearInterval(autoSlideInterval);
             });
 
             document.querySelectorAll('.sidebar a').forEach(link => {
@@ -221,56 +251,35 @@
         async function copyToClipboard(text) {
             try {
                 await navigator.clipboard.writeText(text);
-                showCustomAlert('复制成功: ' + text); // 自定义提示信息
+                showCustomAlert('复制成功: ' + text);
             } catch (err) {
-                console.error('Failed to copy text: ', err);
+                showCustomAlert('复制失败');
             }
         }
 
         function showCustomAlert(message) {
-            const alertDiv = document.createElement('div');
-            alertDiv.textContent = message;
-            alertDiv.style.position = 'fixed';
-            alertDiv.style.bottom = '10px';
-            alertDiv.style.left = '50%';
-            alertDiv.style.transform = 'translateX(-50%)';
-            alertDiv.style.backgroundColor = '#333';
-            alertDiv.style.color = '#fff';
-            alertDiv.style.padding = '10px 20px';
-            alertDiv.style.borderRadius = '5px';
-            alertDiv.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
-            alertDiv.style.zIndex = '1000';
-            document.body.appendChild(alertDiv);
+            const alertBox = document.createElement('div');
+            alertBox.textContent = message;
+            alertBox.style.position = 'fixed';
+            alertBox.style.bottom = '20px';
+            alertBox.style.left = '50%';
+            alertBox.style.transform = 'translateX(-50%)';
+            alertBox.style.backgroundColor = '#333';
+            alertBox.style.color = '#fff';
+            alertBox.style.padding = '10px 20px';
+            alertBox.style.borderRadius = '5px';
+            alertBox.style.zIndex = '9999';
+            alertBox.style.opacity = '0';
+            alertBox.style.transition = 'opacity 0.3s';
+
+            document.body.appendChild(alertBox);
+            setTimeout(() => alertBox.style.opacity = '1', 10);
+
             setTimeout(() => {
-                document.body.removeChild(alertDiv);
-            }, 2000);
+                alertBox.style.opacity = '0';
+                setTimeout(() => document.body.removeChild(alertBox), 300);
+            }, 1500);
         }
-
-        function toggleSidebarVisibility() {
-            const sidebar = document.getElementById('sidebar');
-            const content = document.getElementById('content');
-            sidebar.classList.toggle('hidden');
-            content.classList.toggle('full-width', sidebar.classList.contains('hidden'));
-        }
-
-        // 监听触摸事件
-        let touchStartX = 0;
-        let touchEndX = 0;
-
-        document.addEventListener('touchstart', (e) => {
-            touchStartX = e.changedTouches[0].screenX;
-        });
-
-        document.addEventListener('touchend', (e) => {
-            touchEndX = e.changedTouches[0].screenX;
-            if (touchEndX < touchStartX) {
-                // 左滑
-                toggleSidebarVisibility();
-            } else if (touchEndX > touchStartX) {
-                // 右滑
-                toggleSidebarVisibility();
-            }
-        });
 
         fetchData();
     </script>
