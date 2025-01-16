@@ -6,7 +6,7 @@ Coleta Total	Entre 16:37 e 18:37h
 Coleta Total	
 Coleta Total	
 Coleta Total	
-Coleta Total	Entre 16:37 e 18:37h
+Coleta Total	
 Coleta Total	
 Coleta Total	
 Coleta Total	
@@ -18,8 +18,7 @@ Coleta 070	Entre 16:37 e 18:37h
 Coleta 070	
 Coleta 070	
 Coleta 070	
-Coleta 070	Entre 16:37 e 18:37h
+Coleta 070	Coleta 070	
 Coleta 070	
 Coleta 070	
-Coleta 070	1111
 
