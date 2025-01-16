@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Coleta</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -11,9 +11,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate, private">
     <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Expires" content="-1">
+    <meta name="apple-mobile-web-app-capable" content="no">
     <style>
         /* 基础样式 */
         .update-time {
@@ -333,7 +334,21 @@
         async function loadData() {
             try {
                 const timestamp = new Date().getTime();
-                const response = await fetch(`data01.txt?t=${timestamp}`);
+                const random = Math.random().toString(36).substring(7);
+                const response = await fetch(`data01.txt?t=${timestamp}&r=${random}`, {
+                    method: 'GET',
+                    headers: {
+                        'Cache-Control': 'no-cache, no-store, must-revalidate',
+                        'Pragma': 'no-cache',
+                        'Expires': '0',
+                    },
+                    cache: 'no-store'
+                });
+                
+                await caches.keys().then(function(names) {
+                    for (let name of names) caches.delete(name);
+                });
+                
                 const lastModified = new Date(response.headers.get('last-modified') || new Date());
                 const text = await response.text();
                 const lines = text.trim().split('\n');
@@ -404,9 +419,24 @@
             }
         }
 
-        // 加载数据并定期刷新
-        loadData();
-        setInterval(loadData, 60000);
+        // 页面加载完成后立即执行一次
+        window.onload = function() {
+            loadData();
+            // 每30秒刷新一次（可以根据需要调整时间）
+            setInterval(loadData, 30000);
+        };
+
+        // 添加页面可见性检测
+        document.addEventListener('visibilitychange', function() {
+            if (document.visibilityState === 'visible') {
+                loadData(); // 当页面变为可见时刷新数据
+            }
+        });
+
+        // 添加页面焦点检测
+        window.onfocus = function() {
+            loadData(); // 当页面获得焦点时刷新数据
+        };
     </script>
 </body>
 </html>
