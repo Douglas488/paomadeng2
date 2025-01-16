@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <style>
         /* 基础样式 */
         .update-time {
@@ -329,7 +332,8 @@
 
         async function loadData() {
             try {
-                const response = await fetch('data01.txt');
+                const timestamp = new Date().getTime();
+                const response = await fetch(`data01.txt?t=${timestamp}`);
                 const lastModified = new Date(response.headers.get('last-modified') || new Date());
                 const text = await response.text();
                 const lines = text.trim().split('\n');
@@ -402,7 +406,7 @@
 
         // 加载数据并定期刷新
         loadData();
-        setInterval(loadData, 5000);
+        setInterval(loadData, 60000);
     </script>
 </body>
 </html>
