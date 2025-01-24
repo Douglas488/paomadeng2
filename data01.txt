@@ -1,7 +1,7 @@
-Coleta Total	Entre 17:15 e 19:15h
-Coleta Total	JM Transportes | Médio (EQJ3460)
-Coleta Total	Lucas de Lima Silva
-Coleta Total	Envie o que tiver vendido até as 16:15h
+Coleta Total	Entre 16:28 e 17:28h
+Coleta Total	CEVA | HR (EGK3C52)
+Coleta Total	Douglas Felipe Morais
+Coleta Total	Envie o que tiver vendido até as 15:28h
 Coleta Total	
 Coleta Total	
 Coleta Total	
@@ -11,8 +11,8 @@ Coleta Total
 Coleta Total	
 Coleta Total	
 Coleta 070	Entre 13:54 e 15:54h
-Coleta 070	Smolka | Melione VUC Dedicado (SVZ7B06)
-Coleta 070	Fabio Figueiredo Almeida
+Coleta 070	Smolka | Melione VUC Dedicado (SFN0B48)
+Coleta 070	Elvis Junio Dos Santos
 Coleta 070	Envie o que tiver vendido até as 12:54h
 Coleta 070	
 Coleta 070	
@@ -22,6 +22,7 @@ Coleta 070
 Coleta 070	
 Coleta 070	
 Coleta 070	
+
 
 
 
