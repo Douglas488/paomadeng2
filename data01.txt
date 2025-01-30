@@ -1,7 +1,7 @@
-Coleta Total	Entre 16:47 e 17:47h
-Coleta Total	CEVA | Vuc (EJY7H96)
-Coleta Total	Rauni Vasconcellos de Oliveira
-Coleta Total	Envie o que tiver vendido até as 15:47h
+Coleta Total	Entre 17:16 e 18:16h
+Coleta Total	JM Transportes | Médio (EDM0J24)
+Coleta Total	Max de Souza
+Coleta Total	Envie o que tiver vendido até as 16:16h
 Coleta Total	
 Coleta Total	
 Coleta Total	
@@ -11,8 +11,8 @@ Coleta Total
 Coleta Total	
 Coleta Total	
 Coleta 070	Entre 13:54 e 15:54h
-Coleta 070	Smolka | Melione VUC Dedicado (FYQ9C24)
-Coleta 070	Emerson Henrique da Silva Santos
+Coleta 070	Smolka | Melione VUC Dedicado (FSP7D26)
+Coleta 070	Lucas Oliveira Dos Santos
 Coleta 070	Envie o que tiver vendido até as 12:54h
 Coleta 070	
 Coleta 070	
@@ -22,6 +22,7 @@ Coleta 070
 Coleta 070	
 Coleta 070	
 Coleta 070	
+
 
 
 
