@@ -11,8 +11,8 @@ Coleta Total
 Coleta Total	
 Coleta Total	
 Coleta 070	Entre 13:54 e 15:54h
-Coleta 070	Smolka | Melione VUC Dedicado (FSP7D26)
-Coleta 070	Lucas Oliveira Dos Santos
+Coleta 070	Smolka | Melione VUC Dedicado (STZ7I85)
+Coleta 070	Emiliano Santana de Araujo
 Coleta 070	Envie o que tiver vendido até as 12:54h
 Coleta 070	
 Coleta 070	
@@ -22,6 +22,7 @@ Coleta 070
 Coleta 070	
 Coleta 070	
 Coleta 070	
+
 
 
 
