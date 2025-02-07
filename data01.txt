@@ -1,6 +1,6 @@
 Coleta Total	Entre 16:45 e 17:45h
-Coleta Total	JM Transportes | Médio (EWX8J06)
-Coleta Total	Kaue Rodrigues Gomes da Silva
+Coleta Total	JM Transportes | Vuc (EGK5I08)
+Coleta Total	Luan Cunha Alves de Almeida
 Coleta Total	Envie o que tiver vendido até as 15:45h
 Coleta Total	
 Coleta Total	
@@ -11,8 +11,8 @@ Coleta Total
 Coleta Total	
 Coleta Total	
 Coleta 070	Entre 14:09 e 16:09h
-Coleta 070	Smolka | VUC Dedicado com Ajudante (STK8D17)
-Coleta 070	Jose Henrique Ferreira Duarte
+Coleta 070	Hawk Transportes | Melione VUC Dedicado (TJH2F92)
+Coleta 070	Ryan de Morais Silva
 Coleta 070	Envie o que tiver vendido até as 13:09h
 Coleta 070	
 Coleta 070	
@@ -22,6 +22,7 @@ Coleta 070
 Coleta 070	
 Coleta 070	
 Coleta 070	
+
 
 
 
