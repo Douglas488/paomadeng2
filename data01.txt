@@ -1,23 +1,23 @@
+Coleta Total	Entre 12:56 e 14:56h
+Coleta Total	CEVA | HR (EJG0600)
+Coleta Total	Valmir Dias
+Coleta Total	Envie o que tiver vendido até as 11:56h
+Coleta Total	Entre 13:56 e 15:56h
+Coleta Total	Smolka | Vuc (EVJ7A93)
+Coleta Total	Lucas Luiz da Silva
+Coleta Total	Envie o que tiver vendido até as 12:56h
 Coleta Total	
 Coleta Total	
 Coleta Total	
 Coleta Total	
-Coleta Total	
-Coleta Total	
-Coleta Total	
-Coleta Total	
-Coleta Total	
-Coleta Total	
-Coleta Total	
-Coleta Total	
-Coleta 070	
-Coleta 070	
-Coleta 070	
-Coleta 070	
-Coleta 070	
-Coleta 070	
-Coleta 070	
-Coleta 070	
+Coleta 070	Entre 13:56 e 15:56h
+Coleta 070	Smolka | Vuc (EVJ7A93)
+Coleta 070	Lucas Luiz da Silva
+Coleta 070	Envie o que tiver vendido até as 12:56h
+Coleta 070	Entre 14:09 e 16:09h
+Coleta 070	Hawk Transportes | Melione VUC Dedicado (TLT0B89)
+Coleta 070	Natan Jose de Carvalho
+Coleta 070	Envie o que tiver vendido até as 13:09h
 Coleta 070	
 Coleta 070	
 Coleta 070	
