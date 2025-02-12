@@ -1,7 +1,7 @@
-Coleta Total	Entre 12:56 e 14:56h
-Coleta Total	CEVA | HR (EJG0600)
-Coleta Total	Valmir Dias
-Coleta Total	Envie o que tiver vendido até as 11:56h
+Coleta Total	Entre 15:16 e 16:16h
+Coleta Total	Kangu Logistics | HR (EMH7E76)
+Coleta Total	Kayke Bortolato Santos
+Coleta Total	Envie o que tiver vendido até as 14:16h
 Coleta Total	
 Coleta Total	
 Coleta Total	
@@ -22,6 +22,7 @@ Coleta 070
 Coleta 070	
 Coleta 070	
 Coleta 070	
+
 
 
 
