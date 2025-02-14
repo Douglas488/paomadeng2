@@ -11,8 +11,8 @@ Coleta Total
 Coleta Total	
 Coleta Total	
 Coleta 070	Entre 13:54 e 15:54h
-Coleta 070	Hawk Transportes | Melione VUC Dedicado (TLT0B89)
-Coleta 070	Natan Jose de Carvalho
+Coleta 070	Hawk Transportes | Melione Vuc Rental TKS (TAQ6J47)
+Coleta 070	Antonio Fabio Alves Fonseca
 Coleta 070	Envie o que tiver vendido até as 12:54h
 Coleta 070	
 Coleta 070	
@@ -22,6 +22,7 @@ Coleta 070
 Coleta 070	
 Coleta 070	
 Coleta 070	
+
 
 
 
