@@ -1,7 +1,3 @@
-Coleta Total	Entre 15:16 e 16:16h
-Coleta Total	Kangu Logistics | HR (EOE7626)
-Coleta Total	Yago Dos Santos Antonio
-Coleta Total	Envie o que tiver vendido até as 14:16h
 Coleta Total	
 Coleta Total	
 Coleta Total	
@@ -10,10 +6,10 @@ Coleta Total
 Coleta Total	
 Coleta Total	
 Coleta Total	
-Coleta 070	Entre 13:54 e 15:54h
-Coleta 070	Hawk Transportes | Melione Vuc Rental TKS (TAQ6J47)
-Coleta 070	Antonio Fabio Alves Fonseca
-Coleta 070	Envie o que tiver vendido até as 12:54h
+Coleta Total	
+Coleta Total	
+Coleta Total	
+Coleta Total	
 Coleta 070	
 Coleta 070	
 Coleta 070	
@@ -22,6 +18,11 @@ Coleta 070
 Coleta 070	
 Coleta 070	
 Coleta 070	
+Coleta 070	
+Coleta 070	
+Coleta 070	
+Coleta 070	
+
 
 
 
