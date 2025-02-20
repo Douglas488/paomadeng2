@@ -1,7 +1,7 @@
-Coleta Total	Entre 15:39 e 16:39h
-Coleta Total	Kangu Logistics | HR (EMH7E76)
-Coleta Total	Kayke Bortolato Santos
-Coleta Total	Envie o que tiver vendido até as 14:39h
+Coleta Total	Entre 15:33 e 16:33h
+Coleta Total	Kangu Logistics | Vuc (FJZ2J07)
+Coleta Total	Emerson Do Nascimento
+Coleta Total	Envie o que tiver vendido até as 14:33h
 Coleta Total	
 Coleta Total	
 Coleta Total	
@@ -11,8 +11,8 @@ Coleta Total
 Coleta Total	
 Coleta Total	
 Coleta 070	Entre 13:54 e 15:54h
-Coleta 070	Hawk Transportes | Melione Vuc Rental TKS (TAQ6J47)
-Coleta 070	Antonio Fabio Alves Fonseca
+Coleta 070	Hawk Transportes | Melione Vuc Rental TKS (TAQ6J56)
+Coleta 070	Mateus Vieira da Silva Santos
 Coleta 070	Envie o que tiver vendido até as 12:54h
 Coleta 070	
 Coleta 070	
