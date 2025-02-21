@@ -1,7 +1,7 @@
-Coleta Total	Entre 15:33 e 16:33h
-Coleta Total	Kangu Logistics | Vuc (FJZ2J07)
-Coleta Total	Emerson Do Nascimento
-Coleta Total	Envie o que tiver vendido até as 14:33h
+Coleta Total	Entre 15:11 e 16:11h
+Coleta Total	Kangu Logistics | Vuc (EGK5I08)
+Coleta Total	Luan Cunha Alves de Almeida
+Coleta Total	Envie o que tiver vendido até as 14:11h
 Coleta Total	
 Coleta Total	
 Coleta Total	
@@ -22,6 +22,7 @@ Coleta 070
 Coleta 070	
 Coleta 070	
 Coleta 070	
+
 
 
 
