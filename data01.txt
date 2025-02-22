@@ -1,7 +1,3 @@
-Coleta Total	Entre 15:11 e 16:11h
-Coleta Total	Kangu Logistics | Vuc (EGK5I08)
-Coleta Total	Luan Cunha Alves de Almeida
-Coleta Total	Envie o que tiver vendido até as 14:11h
 Coleta Total	
 Coleta Total	
 Coleta Total	
@@ -10,10 +6,14 @@ Coleta Total
 Coleta Total	
 Coleta Total	
 Coleta Total	
-Coleta 070	Entre 13:54 e 15:54h
-Coleta 070	Hawk Transportes | Melione Vuc Rental TKS (TAQ6J56)
-Coleta 070	Mateus Vieira da Silva Santos
-Coleta 070	Envie o que tiver vendido até as 12:54h
+Coleta Total	
+Coleta Total	
+Coleta Total	
+Coleta Total	
+Coleta 070	
+Coleta 070	
+Coleta 070	
+Coleta 070	
 Coleta 070	
 Coleta 070	
 Coleta 070	
