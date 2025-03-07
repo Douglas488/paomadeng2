@@ -11,8 +11,8 @@ Coleta Total
 Coleta Total	
 Coleta Total	
 Coleta 070	Entre 15:15 e 17:15h
-Coleta 070	Kangu Logistics | Vuc (EGK5I08)
-Coleta 070	Luan Cunha Alves de Almeida
+Coleta 070	Kangu Logistics | Vuc (FVK0472)
+Coleta 070	Rodrigo Rocha Pereira
 Coleta 070	Envie o que tiver vendido até as 14:15h
 Coleta 070	
 Coleta 070	
@@ -22,6 +22,7 @@ Coleta 070
 Coleta 070	
 Coleta 070	
 Coleta 070	
+
 
 
 
