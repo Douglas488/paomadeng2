@@ -21,4 +21,5 @@ Coleta 070
 Coleta 070	
 Coleta 070	
 Coleta 070	
-Coleta 070	
+Coleta 070	.
+
