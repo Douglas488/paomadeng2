@@ -1,7 +1,3 @@
-Coleta Total	Entre 15:15 e 17:15h
-Coleta Total	Hawk Transportes | Melione VUC Dedicado (TJH2F92)
-Coleta Total	Ryan de Morais Silva
-Coleta Total	Envie o que tiver vendido até as 14:15h
 Coleta Total	
 Coleta Total	
 Coleta Total	
@@ -10,10 +6,10 @@ Coleta Total
 Coleta Total	
 Coleta Total	
 Coleta Total	
-Coleta 070	Entre 15:15 e 17:15h
-Coleta 070	Hawk Transportes | Melione VUC Dedicado (TJH2F92)
-Coleta 070	Ryan de Morais Silva
-Coleta 070	Envie o que tiver vendido até as 14:15h
+Coleta Total	
+Coleta Total	
+Coleta Total	
+Coleta Total	
 Coleta 070	
 Coleta 070	
 Coleta 070	
@@ -21,5 +17,8 @@ Coleta 070
 Coleta 070	
 Coleta 070	
 Coleta 070	
-Coleta 070	.
-
+Coleta 070	
+Coleta 070	
+Coleta 070	
+Coleta 070	
+Coleta 070	
