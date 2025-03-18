@@ -1,7 +1,7 @@
-Coleta Total	Entre 14:58 e 16:28h
-Coleta Total	Kangu Logistics | Van (MQU8I73)
-Coleta Total	Bruno de Oliveira Matos
-Coleta Total	Envie o que tiver vendido até as 13:58h
+Coleta Total	Entre 15:03 e 17:03h
+Coleta Total	Kangu Logistics | HR (EJC2J10)
+Coleta Total	Adilson Benedito Menuci
+Coleta Total	Envie o que tiver vendido até as 14:03h
 Coleta Total	
 Coleta Total	
 Coleta Total	
@@ -10,10 +10,10 @@ Coleta Total
 Coleta Total	
 Coleta Total	
 Coleta Total	
-Coleta 070	Entre 14:58 e 16:28h
-Coleta 070	Kangu Logistics | Van (MQU8I73)
-Coleta 070	Bruno de Oliveira Matos
-Coleta 070	Envie o que tiver vendido até as 13:58h
+Coleta 070	Entre 15:03 e 17:03h
+Coleta 070	Kangu Logistics | HR (EJC2J10)
+Coleta 070	Adilson Benedito Menuci
+Coleta 070	Envie o que tiver vendido até as 14:03h
 Coleta 070	
 Coleta 070	
 Coleta 070	
