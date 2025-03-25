@@ -1,7 +1,7 @@
-Coleta Total	Entre 15:20 e 16:20h
-Coleta Total	Kangu Logistics | Van (RNS2C15)
-Coleta Total	Julio Cesar Alves Rodrigues
-Coleta Total	Envie o que tiver vendido até as 14:20h
+Coleta Total	Entre 14:00 e 15:00h
+Coleta Total	Hawk Transportes | Melione Vuc Rental TKS (TAQ7H15)
+Coleta Total	Thiago Alexandre de Sousa
+Coleta Total	Envie o que tiver vendido até as 13:00h
 Coleta Total	
 Coleta Total	
 Coleta Total	
@@ -10,10 +10,10 @@ Coleta Total
 Coleta Total	
 Coleta Total	
 Coleta Total	
-Coleta 070	Entre 15:20 e 16:20h
-Coleta 070	Kangu Logistics | Van (RNS2C15)
-Coleta 070	Julio Cesar Alves Rodrigues
-Coleta 070	Envie o que tiver vendido até as 14:20h
+Coleta 070	Entre 14:00 e 15:00h
+Coleta 070	Hawk Transportes | Melione Vuc Rental TKS (TAQ7H15)
+Coleta 070	Thiago Alexandre de Sousa
+Coleta 070	Envie o que tiver vendido até as 13:00h
 Coleta 070	
 Coleta 070	
 Coleta 070	
