@@ -1,7 +1,7 @@
-Coleta Total	Entre 13:19 e 14:19h
+Coleta Total	Entre 14:25 e 15:25h
 Coleta Total	Kangu Logistics | HR (EJC2J10)
 Coleta Total	Adilson Benedito Menuci
-Coleta Total	Envie o que tiver vendido até as 12:19h
+Coleta Total	Envie o que tiver vendido até as 13:25h
 Coleta Total	
 Coleta Total	
 Coleta Total	
@@ -10,10 +10,10 @@ Coleta Total
 Coleta Total	
 Coleta Total	
 Coleta Total	
-Coleta 070	Entre 13:19 e 14:19h
+Coleta 070	Entre 14:25 e 15:25h
 Coleta 070	Kangu Logistics | HR (EJC2J10)
 Coleta 070	Adilson Benedito Menuci
-Coleta 070	Envie o que tiver vendido até as 12:19h
+Coleta 070	Envie o que tiver vendido até as 13:25h
 Coleta 070	
 Coleta 070	
 Coleta 070	
