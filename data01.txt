@@ -1,7 +1,7 @@
-Coleta Total	Entre 14:25 e 15:25h
-Coleta Total	Kangu Logistics | HR (EJC2J10)
-Coleta Total	Adilson Benedito Menuci
-Coleta Total	Envie o que tiver vendido até as 13:25h
+Coleta Total	Entre 13:21 e 14:21h
+Coleta Total	CEVA | Vuc (FAI4G95)
+Coleta Total	Jose Claudio de Paula
+Coleta Total	Envie o que tiver vendido até as 12:21h
 Coleta Total	
 Coleta Total	
 Coleta Total	
@@ -10,10 +10,10 @@ Coleta Total
 Coleta Total	
 Coleta Total	
 Coleta Total	
-Coleta 070	Entre 14:25 e 15:25h
-Coleta 070	Kangu Logistics | HR (EJC2J10)
-Coleta 070	Adilson Benedito Menuci
-Coleta 070	Envie o que tiver vendido até as 13:25h
+Coleta 070	Entre 13:21 e 14:21h
+Coleta 070	CEVA | Vuc (FAI4G95)
+Coleta 070	Jose Claudio de Paula
+Coleta 070	Envie o que tiver vendido até as 12:21h
 Coleta 070	
 Coleta 070	
 Coleta 070	
@@ -22,6 +22,7 @@ Coleta 070
 Coleta 070	
 Coleta 070	
 Coleta 070	
+
 
 
 
