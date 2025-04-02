@@ -1,7 +1,7 @@
-Coleta Total	Entre 15:12 e 16:12h
-Coleta Total	SEQUOIA LM | HR (FLD6H11)
-Coleta Total	Diocleciano Araujo da Silva
-Coleta Total	Envie o que tiver vendido até as 14:12h
+Coleta Total	Entre 15:21 e 17:12h
+Coleta Total	Kangu Logistics | HR (ELT6J21)
+Coleta Total	Felipe Nogueira Gurgel
+Coleta Total	Envie o que tiver vendido até as 14:21h
 Coleta Total	
 Coleta Total	
 Coleta Total	
@@ -10,10 +10,10 @@ Coleta Total
 Coleta Total	
 Coleta Total	
 Coleta Total	
-Coleta 070	Entre 15:12 e 16:12h
-Coleta 070	SEQUOIA LM | HR (FLD6H11)
-Coleta 070	Diocleciano Araujo da Silva
-Coleta 070	Envie o que tiver vendido até as 14:12h
+Coleta 070	Entre 15:21 e 17:12h
+Coleta 070	Kangu Logistics | HR (ELT6J21)
+Coleta 070	Felipe Nogueira Gurgel
+Coleta 070	Envie o que tiver vendido até as 14:21h
 Coleta 070	
 Coleta 070	
 Coleta 070	
@@ -22,7 +22,6 @@ Coleta 070
 Coleta 070	
 Coleta 070	
 Coleta 070	
-
 
 
 
