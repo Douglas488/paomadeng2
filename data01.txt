@@ -1,7 +1,7 @@
-Coleta Total	Entre 15:21 e 17:12h
-Coleta Total	Kangu Logistics | HR (ELT6J21)
-Coleta Total	Felipe Nogueira Gurgel
-Coleta Total	Envie o que tiver vendido até as 14:21h
+Coleta Total	Entre 15:47 e 16:47h
+Coleta Total	Kangu Logistics | HR (FPA7C43)
+Coleta Total	Aguinaldo Gomes Dos Santos
+Coleta Total	Envie o que tiver vendido até as 14:47h
 Coleta Total	
 Coleta Total	
 Coleta Total	
@@ -10,10 +10,10 @@ Coleta Total
 Coleta Total	
 Coleta Total	
 Coleta Total	
-Coleta 070	Entre 15:21 e 17:12h
-Coleta 070	Kangu Logistics | HR (ELT6J21)
-Coleta 070	Felipe Nogueira Gurgel
-Coleta 070	Envie o que tiver vendido até as 14:21h
+Coleta 070	Entre 15:47 e 16:47h
+Coleta 070	Kangu Logistics | HR (FPA7C43)
+Coleta 070	Aguinaldo Gomes Dos Santos
+Coleta 070	Envie o que tiver vendido até as 14:47h
 Coleta 070	
 Coleta 070	
 Coleta 070	
