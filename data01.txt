@@ -1,7 +1,7 @@
-Coleta Total	Entre 15:47 e 16:47h
-Coleta Total	Kangu Logistics | HR (FPA7C43)
-Coleta Total	Aguinaldo Gomes Dos Santos
-Coleta Total	Envie o que tiver vendido até as 14:47h
+Coleta Total	Entre 14:53 e 15:53h
+Coleta Total	Kangu Logistics | HR (PZR2A11)
+Coleta Total	Celso Macedo Rodrigues da Silva
+Coleta Total	Envie o que tiver vendido até as 13:53h
 Coleta Total	
 Coleta Total	
 Coleta Total	
@@ -10,10 +10,10 @@ Coleta Total
 Coleta Total	
 Coleta Total	
 Coleta Total	
-Coleta 070	Entre 15:47 e 16:47h
-Coleta 070	Kangu Logistics | HR (FPA7C43)
-Coleta 070	Aguinaldo Gomes Dos Santos
-Coleta 070	Envie o que tiver vendido até as 14:47h
+Coleta 070	Entre 14:53 e 15:53h
+Coleta 070	Kangu Logistics | HR (PZR2A11)
+Coleta 070	Celso Macedo Rodrigues da Silva
+Coleta 070	Envie o que tiver vendido até as 13:53h
 Coleta 070	
 Coleta 070	
 Coleta 070	
@@ -22,6 +22,7 @@ Coleta 070
 Coleta 070	
 Coleta 070	
 Coleta 070	
+
 
 
 
