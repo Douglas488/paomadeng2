@@ -1,7 +1,7 @@
-Coleta Total	Entre 15:04 e 16:52h
-Coleta Total	CEVA | HR (ERW4E39)
-Coleta Total	Pedro Antunes
-Coleta Total	Envie o que tiver vendido até as 14:04h
+Coleta Total	Entre 14:46 e 16:37h
+Coleta Total	Hawk Transportes | Melione Vuc Rental TKS (TAR3C48)
+Coleta Total	Matheus Santos de Lima
+Coleta Total	Envie o que tiver vendido até as 13:46h
 Coleta Total	
 Coleta Total	
 Coleta Total	
@@ -10,10 +10,10 @@ Coleta Total
 Coleta Total	
 Coleta Total	
 Coleta Total	
-Coleta 070	Entre 15:04 e 16:52h
-Coleta 070	CEVA | HR (ERW4E39)
-Coleta 070	Pedro Antunes
-Coleta 070	Envie o que tiver vendido até as 14:04h
+Coleta 070	Entre 14:46 e 16:37h
+Coleta 070	Hawk Transportes | Melione Vuc Rental TKS (TAR3C48)
+Coleta 070	Matheus Santos de Lima
+Coleta 070	Envie o que tiver vendido até as 13:46h
 Coleta 070	
 Coleta 070	
 Coleta 070	
@@ -22,6 +22,7 @@ Coleta 070
 Coleta 070	
 Coleta 070	
 Coleta 070	
+
 
 
 
