@@ -1,7 +1,7 @@
-Coleta Total	Entre 14:46 e 16:37h
-Coleta Total	Hawk Transportes | Melione Vuc Rental TKS (TAR3C48)
-Coleta Total	Matheus Santos de Lima
-Coleta Total	Envie o que tiver vendido até as 13:46h
+Coleta Total	Entre 15:36 e 16:36h
+Coleta Total	Kangu Logistics | HR (EZP2G56)
+Coleta Total	Giuliana Ennes de Oliveira
+Coleta Total	Envie o que tiver vendido até as 14:36h
 Coleta Total	
 Coleta Total	
 Coleta Total	
@@ -10,10 +10,10 @@ Coleta Total
 Coleta Total	
 Coleta Total	
 Coleta Total	
-Coleta 070	Entre 14:46 e 16:37h
-Coleta 070	Hawk Transportes | Melione Vuc Rental TKS (TAR3C48)
-Coleta 070	Matheus Santos de Lima
-Coleta 070	Envie o que tiver vendido até as 13:46h
+Coleta 070	Entre 15:36 e 16:36h
+Coleta 070	Kangu Logistics | HR (EZP2G56)
+Coleta 070	Giuliana Ennes de Oliveira
+Coleta 070	Envie o que tiver vendido até as 14:36h
 Coleta 070	
 Coleta 070	
 Coleta 070	
