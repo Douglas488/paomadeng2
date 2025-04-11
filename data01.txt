@@ -1,7 +1,7 @@
-Coleta Total	Entre 15:36 e 16:36h
-Coleta Total	Kangu Logistics | HR (EZP2G56)
-Coleta Total	Giuliana Ennes de Oliveira
-Coleta Total	Envie o que tiver vendido até as 14:36h
+Coleta Total	Entre 15:11 e 17:10h
+Coleta Total	Kangu Logistics | Vuc (FJZ2J07)
+Coleta Total	Orlando Gabriel de Oliveira Regasso
+Coleta Total	Envie o que tiver vendido até as 14:11h
 Coleta Total	
 Coleta Total	
 Coleta Total	
@@ -10,10 +10,10 @@ Coleta Total
 Coleta Total	
 Coleta Total	
 Coleta Total	
-Coleta 070	Entre 15:36 e 16:36h
-Coleta 070	Kangu Logistics | HR (EZP2G56)
-Coleta 070	Giuliana Ennes de Oliveira
-Coleta 070	Envie o que tiver vendido até as 14:36h
+Coleta 070	Entre 15:11 e 17:10h
+Coleta 070	Kangu Logistics | Vuc (FJZ2J07)
+Coleta 070	Orlando Gabriel de Oliveira Regasso
+Coleta 070	Envie o que tiver vendido até as 14:11h
 Coleta 070	
 Coleta 070	
 Coleta 070	
