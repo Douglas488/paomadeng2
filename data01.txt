@@ -1,7 +1,7 @@
-Coleta Total	Entre 16:00 e 17:00h
-Coleta Total	Kangu Logistics | HR (EMH7E76)
-Coleta Total	Kayke Bortolato Santos
-Coleta Total	Envie o que tiver vendido até as 15:00h
+Coleta Total	Entre 15:23 e 16:23h
+Coleta Total	Kangu Logistics | HR (FWD7A61)
+Coleta Total	Diego da Silva
+Coleta Total	Envie o que tiver vendido até as 14:23h
 Coleta Total	
 Coleta Total	
 Coleta Total	
@@ -10,10 +10,10 @@ Coleta Total
 Coleta Total	
 Coleta Total	
 Coleta Total	
-Coleta 070	Entre 16:00 e 17:00h
-Coleta 070	Kangu Logistics | HR (EMH7E76)
-Coleta 070	Kayke Bortolato Santos
-Coleta 070	Envie o que tiver vendido até as 15:00h
+Coleta 070	Entre 15:23 e 16:23h
+Coleta 070	Kangu Logistics | HR (FWD7A61)
+Coleta 070	Diego da Silva
+Coleta 070	Envie o que tiver vendido até as 14:23h
 Coleta 070	
 Coleta 070	
 Coleta 070	
