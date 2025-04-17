@@ -1,7 +1,7 @@
-Coleta Total	Entre 13:00 e 14:00h
-Coleta Total	Hawk Transportes | MeliOne Van Frota Fixa (RVB7I06)
-Coleta Total	Lucas Souza da Silva
-Coleta Total	Envie o que tiver vendido até as 12:00h
+Coleta Total	Entre 15:06 e 16:06h
+Coleta Total	CEVA | Vuc (ECM0288)
+Coleta Total	Marcelo Bonora
+Coleta Total	Envie o que tiver vendido até as 14:06h
 Coleta Total	
 Coleta Total	
 Coleta Total	
@@ -10,10 +10,10 @@ Coleta Total
 Coleta Total	
 Coleta Total	
 Coleta Total	
-Coleta 070	Entre 13:00 e 14:00h
-Coleta 070	Hawk Transportes | MeliOne Van Frota Fixa (RVB7I06)
-Coleta 070	Lucas Souza da Silva
-Coleta 070	Envie o que tiver vendido até as 12:00h
+Coleta 070	Entre 15:06 e 16:06h
+Coleta 070	CEVA | Vuc (ECM0288)
+Coleta 070	Marcelo Bonora
+Coleta 070	Envie o que tiver vendido até as 14:06h
 Coleta 070	
 Coleta 070	
 Coleta 070	
