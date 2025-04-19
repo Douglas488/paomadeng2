@@ -1,7 +1,3 @@
-Coleta Total	Entre 15:06 e 16:06h
-Coleta Total	CEVA | Vuc (ECM0288)
-Coleta Total	Marcelo Bonora
-Coleta Total	Envie o que tiver vendido até as 14:06h
 Coleta Total	
 Coleta Total	
 Coleta Total	
@@ -10,10 +6,14 @@ Coleta Total
 Coleta Total	
 Coleta Total	
 Coleta Total	
-Coleta 070	Entre 15:06 e 16:06h
-Coleta 070	CEVA | Vuc (ECM0288)
-Coleta 070	Marcelo Bonora
-Coleta 070	Envie o que tiver vendido até as 14:06h
+Coleta Total	
+Coleta Total	
+Coleta Total	
+Coleta Total	
+Coleta 070	
+Coleta 070	
+Coleta 070	
+Coleta 070	
 Coleta 070	
 Coleta 070	
 Coleta 070	
