@@ -1,7 +1,7 @@
-Coleta Total	Entre 14:48 e 16:18h
-Coleta Total	Hawk Transportes | Vuc (SRT1J51)
-Coleta Total	Gilberto Alves de Oliveira
-Coleta Total	Envie o que tiver vendido até as 13:48h
+Coleta Total	Entre 14:08 e 15:08h
+Coleta Total	Hawk Transportes | Melione Vuc Rental TKS (TAR3D05)
+Coleta Total	Luca Manu Augusto
+Coleta Total	Envie o que tiver vendido até as 13:08h
 Coleta Total	
 Coleta Total	
 Coleta Total	
@@ -10,10 +10,10 @@ Coleta Total
 Coleta Total	
 Coleta Total	
 Coleta Total	
-Coleta 070	Entre 14:48 e 16:18h
-Coleta 070	Hawk Transportes | Vuc (SRT1J51)
-Coleta 070	Gilberto Alves de Oliveira
-Coleta 070	Envie o que tiver vendido até as 13:48h
+Coleta 070	
+Coleta 070	
+Coleta 070	
+Coleta 070	
 Coleta 070	
 Coleta 070	
 Coleta 070	
