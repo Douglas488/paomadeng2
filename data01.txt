@@ -1,7 +1,7 @@
-Coleta Total	Entre 14:08 e 15:08h
-Coleta Total	Hawk Transportes | Melione Vuc Rental TKS (TAR3D05)
-Coleta Total	Luca Manu Augusto
-Coleta Total	Envie o que tiver vendido até as 13:08h
+Coleta Total	Entre 15:06 e 17:02h
+Coleta Total	Hawk Transportes | Vuc (ETO3E25)
+Coleta Total	Jose Carlos Fagundes
+Coleta Total	Envie o que tiver vendido até as 14:06h
 Coleta Total	
 Coleta Total	
 Coleta Total	
@@ -22,6 +22,7 @@ Coleta 070
 Coleta 070	
 Coleta 070	
 Coleta 070	
+
 
 
 
