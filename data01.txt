@@ -1,7 +1,3 @@
-Coleta Total	Entre 15:06 e 17:02h
-Coleta Total	Hawk Transportes | Vuc (ETO3E25)
-Coleta Total	Jose Carlos Fagundes
-Coleta Total	Envie o que tiver vendido até as 14:06h
 Coleta Total	
 Coleta Total	
 Coleta Total	
@@ -10,6 +6,10 @@ Coleta Total
 Coleta Total	
 Coleta Total	
 Coleta Total	
+Coleta Total	
+Coleta Total	
+Coleta Total	
+Coleta Total	
 Coleta 070	
 Coleta 070	
 Coleta 070	
@@ -22,8 +22,6 @@ Coleta 070
 Coleta 070	
 Coleta 070	
 Coleta 070	
-
-
 
 
 
