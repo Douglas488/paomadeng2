@@ -1,7 +1,7 @@
-Coleta Total	Entre 14:06 e 15:36h
-Coleta Total	Hawk Transportes | Melione Vuc Rental TKS (TAS1H02)
-Coleta Total	Mateus Barbosa Rezende
-Coleta Total	Envie o que tiver vendido até as 13:06h
+Coleta Total	Entre 14:19 e 15:19h
+Coleta Total	Hawk Transportes | Melione VUC Dedicado (TAR2I92)
+Coleta Total	Klaus Marcilio Pereira
+Coleta Total	Envie o que tiver vendido até as 13:19h
 Coleta Total	
 Coleta Total	
 Coleta Total	
@@ -22,6 +22,7 @@ Coleta 070
 Coleta 070	
 Coleta 070	
 Coleta 070	
+
 
 
 
