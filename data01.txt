@@ -1,7 +1,3 @@
-Coleta Total	Entre 13:31 e 15:20h
-Coleta Total	Hawk Transportes | Melione VUC Dedicado (TAR2I92)
-Coleta Total	Klaus Marcilio Pereira
-Coleta Total	Envie o que tiver vendido até as 12:31h
 Coleta Total	
 Coleta Total	
 Coleta Total	
@@ -10,6 +6,10 @@ Coleta Total
 Coleta Total	
 Coleta Total	
 Coleta Total	
+Coleta Total	
+Coleta Total	
+Coleta Total	
+Coleta Total	
 Coleta 070	
 Coleta 070	
 Coleta 070	
@@ -22,7 +22,6 @@ Coleta 070
 Coleta 070	
 Coleta 070	
 Coleta 070	
-
 
 
 
