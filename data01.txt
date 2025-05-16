@@ -1,7 +1,7 @@
-Coleta Total	Entre 13:56 e 15:56h
-Coleta Total	Hawk Transportes | Melione Vuc Rental TKS (TAQ3B96)
-Coleta Total	Vitor Gomes Dos Anjos
-Coleta Total	Envie o que tiver vendido até as 12:56h
+Coleta Total	Entre 15:23 e 16:23h
+Coleta Total	Kangu Logistics | HR (CUC6B55)
+Coleta Total	Eliclei Santos Pereira
+Coleta Total	Envie o que tiver vendido até as 14:23h
 Coleta Total	
 Coleta Total	
 Coleta Total	
@@ -22,6 +22,7 @@ Coleta 070
 Coleta 070	
 Coleta 070	
 Coleta 070	
+
 
 
 
