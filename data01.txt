@@ -1,7 +1,3 @@
-Coleta Total	Entre 14:41 e 15:41h
-Coleta Total	Kangu Logistics | Vuc (EMU0J32)
-Coleta Total	Tiago Aparecido de Paula
-Coleta Total	Envie o que tiver vendido até as 13:41h
 Coleta Total	
 Coleta Total	
 Coleta Total	
@@ -10,6 +6,10 @@ Coleta Total
 Coleta Total	
 Coleta Total	
 Coleta Total	
+Coleta Total	
+Coleta Total	
+Coleta Total	
+Coleta Total	
 Coleta 070	
 Coleta 070	
 Coleta 070	
@@ -22,4 +22,5 @@ Coleta 070
 Coleta 070	
 Coleta 070	
 Coleta 070	
+
 
